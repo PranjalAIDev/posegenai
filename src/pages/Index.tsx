@@ -33,7 +33,14 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-midnight text-white">
+    <div className="min-h-screen bg-black text-white">
+      <div className="title-banner bg-gradient-to-r from-teal/10 to-purple/10 py-2 border-b border-teal/20">
+        <div className="container mx-auto px-4">
+          <h1 className="text-lg md:text-xl font-poppins font-semibold text-center">
+            <span className="text-teal">PoseGenAI:</span> Visual Try On
+          </h1>
+        </div>
+      </div>
       <Navbar />
       <HeroSection />
       <ShowcaseSection />
