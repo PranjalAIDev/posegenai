@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { FileText, Rocket } from "lucide-react";
+import { FileText, Play } from "lucide-react";
 
 const HeroSection: React.FC = () => {
   const [animationClass, setAnimationClass] = useState("");
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
             
             <h1 className={`text-4xl md:text-6xl font-bold mb-6 font-poppins leading-tight ${animationClass}`} style={{ animationDelay: '0.5s' }}>
               <span className="typing-animation inline-block">
-                Reimagine Person Image Generation.
+                PoseGenAI: Visual Try On
               </span>
             </h1>
             
@@ -66,7 +66,7 @@ const HeroSection: React.FC = () => {
             
             <div className={`flex flex-col sm:flex-row gap-4 ${animationClass}`} style={{ animationDelay: '1.1s' }}>
               <Button className="bg-teal hover:bg-teal-light text-white font-medium py-6 px-8 rounded-md glow-button">
-                <Rocket className="mr-2 h-5 w-5" />
+                <Play className="mr-2 h-5 w-5" />
                 Try on VTON
               </Button>
               
